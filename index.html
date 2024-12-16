@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory game</title>
+</head>
+<body>
+    <h1>Memory Card Game</h1>
+
+    <div id="controls">
+        <label for="player-name">Enter your name:</label>
+        <input type="text" id="player-name" placeholder="Your name">
+        <button id="start-game">Start Game</button>
+        <button id="show-leaderboard">Show Leaderboard</button>
+    </div>
+
+    <div id="difficulty">
+        <button data-level="4">4x4</button>
+        <button data-level="6">6x6</button>
+        <button data-level="8">8x8</button>
+    </div>
+
+    <div id="game-container"></div>
+
+    <div id="game-over"></div>
+
+    <div id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
